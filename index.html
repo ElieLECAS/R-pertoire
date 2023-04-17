@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire embauche</title>
+</head>
+
+<body>
+    <form method="get" action="">
+        <fieldset>
+
+            <!-- Prénom Nom Age -->
+
+
+            <label for="prenom">Prénom</label> : <input type="text" name="prenom" id="prenom" placeholder="Elie"
+                required autofocus> <br><br>
+            <label for="nom">Nom</label> : <input type="text" name="nom" id="nom" placeholder="Lecas" required><br><br>
+
+
+            <!-- Sexe -->
+            <label>Sexe</label> :
+            <input type="radio" name="sexe" value="femme" id="femme" checked><label for="femme">Femme</label>
+            <input type="radio" name="sexe" value="homme" id="homme"><label for="homme">Homme</label>
+            <input type="radio" name="sexe" value="autre" id="autre"><label for="autre">Autre</label>
+            <br><br>
+
+            <!-- Age -->
+            <label for="age">Age</label> : <input type="number" name="age" id="age" max="99" required><br><br>
+            <label for="naissance">Date de naissance</label> : <input type="date" name="naissance" id="naissance"
+                required><br><br>
+            <label for="paysDeNaissance">Pays de naissance</label> :
+            <select name="paysDeNaissance" id="paysDeNaissance">
+                <option value="france">France</option>
+                <option value="allemagne">Allemagne</option>
+                <option value="belgique">Belgique</option>
+                <option value="espagne">Espagne</option>
+                <option value="italie">Italie</option>
+                <option value="suissepays">Suisse</option>
+            </select><br><br>
+
+
+            <!-- Nationalité -->
+            <label>Nationalité</label> :
+            <input type="radio" name="nationalite" value="francaise" id="nationaliteFrancaise" checked><label
+                for="nationaliteFrancaise">Francaise</label>
+            <input type="radio" name="nationalite" id="autreNationalite">
+            <label for="autreNationalite"> autre : </label>
+            <select name="nationalites" id="nationalites">
+                <!-- <option value="choix"></option> -->
+                <option value="allemande">Allemande</option>
+                <option value="belge">Belge</option>
+                <option value="espagnole">Espagnole</option>
+                <option value="italienne">Italienne</option>
+                <option value="suisse">Suisse</option>
+            </select>
+            <br><br>
+
+
+            <!-- E-mail -->
+            <label for="email">E-mail</label> : <input type="email" name="email" id="email" placeholder="@" required>
+            <br><br>
+
+            <!-- Adresse -->
+            <label for="adresse">Adresse</label> : <textarea name="adresse" id="adresse" cols="50" rows="4"
+                required></textarea><br><br>
+            <label for="zipcode">Code postal</label> : <input type="tel" name="zipcode" id="zipcode" minlength="5"
+                maxlength="5" required>
+            <br><br>
+            <label for="ville">Ville</label> : <input type="text" name="ville" id="ville" required>
+            <br><br>
+
+
+            <!-- Métier -->
+            <label for="metier">Métier exercé</label> :
+            <select name="metier" id="metier">
+                <option value="choix">Choisir</option>
+                <option value="designerDeJeuxVidéo">Designer de jeux vidéo</option>
+                <option value="dresseurDeChiens">Dresseur de chiens</option>
+                <option value="embaumeur">Embaumeur</option>
+                <option value="testeurDeBonbons">Testeur de bonbons</option>
+                <option value="thanatopracteur">Thanatopracteur</option>
+            </select><br><br>
+
+
+            <!-- Numéro sécurité sociale -->
+            <label for="securiteSociale">Numéro de sécurité sociale</label> :
+            <input type="number" name="securiteSociale" id="securiteSociale" min="100000000000000" max="299999999999999"
+                required><br><br>
+
+            <!-- PassPort -->
+            <label for="passport">Date de délivrance du passeport</label> :
+            <input type="date" name="passport" id="passport" required><br><br>
+            <label for="passportValidite">Date de validité du passeport</label> :
+            <input type="date" name="passportValidite" id="passportValidite" required><br><br>
+
+            <br><br>
+            <input type="submit" value="Envoyer">
+
+        </fieldset>
+    </form>
+
+
+</body>
+
+</html>
